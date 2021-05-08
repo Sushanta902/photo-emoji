@@ -1,0 +1,157 @@
+{%extends 'base.html'%}
+{%block title%}
+this is a title
+{% endblock title%}
+{%block head%}
+<!-- <script src="https://kit.fontawesome.com/6f4ddd6113.js" crossorigin="anonymous"></script> -->
+<script src="/static/js/kitfont.js"></script>
+{%endblock head%}
+{%block edit%}
+  
+.fab {
+    padding: 40px;
+    font-size: 70px;
+    width: 150px;
+    height:150px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius:500px;
+    
+  }
+  
+  .fab:hover {
+      opacity: 0.7;
+  }
+  .gap{
+      word-spacing:45px;
+  }
+@media screen and (max-width: 600px) {
+    .gap {
+        word-spacing:0;
+    }
+    .fab {
+        padding: 30px;
+        font-size: 30px;
+        width: 90px;
+        height:90px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius:500px;
+        
+      }
+      
+}
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    
+    #content {
+      position: absolute;
+      text-align: center;
+      bottom: 0%;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
+    .glow {
+      font-size: 40px;
+      color: #fff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+    }
+    
+    #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .bg{
+         background-image: url("bc.webp");
+    
+      /* Full height */
+      height: 100%; 
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      
+
+      
+      .fa-instagram {
+        background: red;
+        color: white;
+      }
+   
+      .fa-github {
+        background: white;
+        border:solid 1px black;
+        color: black;
+      }
+      
+
+
+      .fa-reddit {
+        background: #ff5700;
+        color: white;
+      }
+      
+      
+
+
+{%endblock edit%}
+{%block body%}
+<center><h1>About me:</h1></center>
+
+<br>
+<div class="gap">
+<a href="https://www.facebook.com/sushanta.neupane.5/" target="_blank"><i class="fab fa-facebook"></i></a>
+
+<a href="https://twitter.com/sushantaneupan2" target="_blank" >
+    <i class="fab fa-twitter"></i>
+</a>
+
+<a href="https://www.instagram.com/sushanta_neupane/" target="_blank" >
+    <i class="fab fa-instagram"></i></a>
+
+<a href="https://www.reddit.com/user/Sushanta_Neupane" target="_blank"><i class="fab fa-reddit"></i></a>
+<a href="https://www.github.com/Sushanta902/" target="_blank"> <i class="fab fa-github"></i></a></div>
+{% endblock body%}
