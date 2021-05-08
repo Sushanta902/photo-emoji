@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-x*)f$v0@qdplz(gvw692)klbinp0n9!!75_ioh(zldter!p#yx
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['photo-to-emoji.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['https://photo-to-emoji.herokuapp.com/','photo-to-emoji.herokuapp.com','127.0.0.1']
 
 
 # Application definition
